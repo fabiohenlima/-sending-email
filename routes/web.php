@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/emailtrigger','Email\EmailTriggerController@index');
+Route::get('/emailTrigger','Email\EmailTriggerController@index')->name('email.index');
+Route::get('/emailtrigger/disparity','Email\EmailTriggerController@disparity')->name('disparity');
